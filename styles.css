@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  --main: white;
+  --accent: #fe724f;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body * {
+  margin: 0;
+  position: relative;
+}
+
+i {
+  font-style: normal;
+  color: #8a8a8a;
+  font-size: 30px;
+}
+
+svg {
+  width: 30px;
+  fill: #8a8a8a;
+}
+
+.info-link {
+  text-decoration: none;
+}
+
+.business2 {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #131417;
+}
+
+.business2 .front {
+  background-color: var(--main);
+  width: 360px;
+  height: 480px;
+  margin: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.business2 .top {
+  height: 80%;
+  background-color: var(--accent);
+}
+
+.business2 .avatar p {
+  color: white;
+}
+
+.business2 .avatar {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 35px;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.business2 .img {
+  background-color: #bfc2c7;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 6px solid var(--main);
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://avatars.githubusercontent.com/u/32155118?v=4);
+  margin: auto;
+}
+
+.business2 .front .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  border-radius: inherit;
+  transform: translateY(-50px);
+  background: white;
+  padding: 25px;
+}
