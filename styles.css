@@ -8,7 +8,12 @@
 }
 
 body {
- margin: 0;
+  margin: 0;
+  position: relative;
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 i {
@@ -22,6 +27,30 @@ svg {
   fill: #8a8a8a;
 }
 
+.fog {
+  position: absolute;
+  bottom: 95px;
+  z-index: 2;
+}
+
+@keyframes cloudLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.moving-cloud {
+  position: absolute;
+  bottom: 95px;
+  z-index: 2;
+  width: 250.625em;
+  height: 43.75em;
+  animation: 80s linear infinite cloudLoop;
+}
+
 .info-link {
   text-decoration: none;
 }
@@ -31,7 +60,7 @@ svg {
   align-items: center;
   min-height: 100vh;
   justify-content: center;
-  background-color: #131417;
+  background: #00000070;
 }
 
 .business2 .front {
@@ -42,6 +71,7 @@ svg {
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  z-index: 5;
 }
 
 .business2 .top {
